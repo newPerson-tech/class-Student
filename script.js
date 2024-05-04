@@ -31,21 +31,21 @@ class Student {
     return sum / this.grades.length;
   }
 
-  // Methid to check attendance
+  // Method to check attendance
   present() {
-    const index = this.attendance.indexOf(null); // Пошук першого порожнього місця
+    const index = this.attendance.indexOf(null); // Looking for first not-filled date
     if (index !== -1) {
-      this.attendance[index] = true; // Відзначити присутність
+      this.attendance[index] = true; // Mark as present
     } else {
       console.error("All 25 dates have been filled");
     }
   }
 
-  // Method to check presence
+  // Method to check abscence
   absent() {
-    const index = this.attendance.indexOf(null); // Пошук першого порожнього місця
+    const index = this.attendance.indexOf(null); // Looking for first not-filled date
     if (index !== -1) {
-      this.attendance[index] = false; // Відзначити відсутність
+      this.attendance[index] = false; // Mark as abcent
     } else {
       console.error("All 25 dates have been filled");
     }
